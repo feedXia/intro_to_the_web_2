@@ -20,7 +20,13 @@ get "/the-plague" do
   "Under the vast indifference of the sky"
 end
 
-get "/cat" do
+get "/random-cat" do
   @cat_names = ["Amigo", "Misty", "Almond", "Matthew", "Xia"].sample
+  erb(:index)
+end
+
+get "/named-cat" do
+  p params
+  @cat_names = params[:name]
   erb(:index)
 end
