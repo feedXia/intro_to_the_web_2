@@ -34,3 +34,5 @@ end
 get "/cat_form" do
   erb :cat_form
 end
+
+run! if app_file == $0
