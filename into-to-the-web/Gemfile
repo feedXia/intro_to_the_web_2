@@ -8,3 +8,5 @@ gem "sinatra-contrib"
 gem "capybara"
 gem "selenium-webdriver"
 gem "geckodriver-helper"
+gem 'shotgun'
+gem 'launchy'
