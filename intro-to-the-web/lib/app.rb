@@ -5,6 +5,10 @@ require "sinatra/reloader" if development?
 # set :bind, "0.0.0.0"
 
 class IntroToWeb < Sinatra::Base
+  configure :development do
+    register Sinatra::Reloader
+  end
+
   get "/" do
     "hello!"
   end

@@ -1,0 +1,29 @@
+{
+  "configurations": [
+    {
+      "name": "Listen for rdebug-ide",
+      "type": "Ruby",
+      "request": "attach",
+      "remoteHost": "127.0.0.1",
+      "remotePort": "1234",
+      "remoteWorkspaceRoot": "${workspaceRoot}",
+      "cwd": "${workspaceRoot}"
+    },
+
+    {
+      "name": "Debug Local File",
+      "type": "Ruby",
+      "request": "launch",
+      "cwd": "${workspaceRoot}",
+      "program": "/Users/xia/Projects/ruby-exercises/kata_is_prime.rb",
+      "externalConsole": true
+      // "showDebuggerOutput": true,
+      // "env": {
+      //   "PATH": "/Users/xia/.rvm/gems/ruby-3.0.0/bin:/Users/xia/.rvm/gems/ruby-3.0.0@global/bin:/Users/xia/.rvm/rubies/ruby-3.0.0/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/Library/Apple/usr/bin:/Users/xia/.rvm/gems/ruby-3.0.0/bin:/Users/xia/.rvm/gems/ruby-3.0.0@global/bin:/Users/xia/.rvm/rubies/ruby-3.0.0/bin:/Users/xia/.rvm/bin:/Users/xia/.rvm/bin",
+      //   "GEM_HOME": "/Users/xia/.rvm/gems/ruby-3.0.0",
+      //   "GEM_PATH": "/Users/xia/.rvm/gems/ruby-3.0.0:/Users/xia/.rvm/gems/ruby-3.0.0@global",
+      //   "RUBY_VERSION": "ruby-3.0.0"
+      // }
+    }
+  ]
+}
